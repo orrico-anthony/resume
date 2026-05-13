@@ -1,0 +1,122 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.5em]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\Large \textbf{Anthony Orrico}} \\[4pt]
+  \href{https://www.linkedin.com/in/anthony-orrico-b78341157/}{linkedin.com/in/anthony-orrico} \quad$|$\quad
+  New York, NY 10005 \quad$|$\quad
+  (732) 325-7344 \quad$|$\quad
+  aorrico2@gmail.com
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Morgan Stanley}{New York, NY}
+      {Director / Tech Lead -- Institutional Securities Tech -- Full Stack Developer}{Mar 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Lead core development, user onboarding and maintenance of existing Distributed System consisting of noSQL databases, real time data loading processes, real time messaging queues (Kafka) and robust Spring Web servers.}
+        \resumeItem{Overhauled data cleaning process for Bond Reference data depended on by real time bond trading systems.}
+        \resumeItem{Modernized multiple legacy Spring Web Service upgrading major Spring, Gradle, and JDK Versions.}
+        \resumeItem{Led department wide initiative to automate the SDLC process and track adoption statistics.}
+        \resumeItem{Inherited ownership of high leverage Spring Web loan pricing tool with angular UI used by trading desk.}
+        \resumeItem{Implemented overhaul for automating heavily manual pricing export and ding models to cut development time for Trading Desk requests from 1 week to ~4 hours.}
+        \resumeItem{Optimized real time data ingestion processes for high priority Bloomberg data to load seamlessly and within seconds (over 5x faster than original process).}
+        \resumeItem{Built backend for ETF portfolio trade booking dashboard utlizing Python Tornado Web Server, Postgres DB design, and CPS messaging.}
+        \resumeItem{Led agentic workflow adoption with firm's newly acquired Github Copilot CLI among team's server and UI projects to streamline development and SDLC workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Morgan Stanley}{New York, NY}
+      {Associate -- Institutional Securities Tech -- Full Stack Developer}{Aug 2021 -- Mar 2024}
+      \resumeItemListStart
+        \resumeItem{Owned and operated a high-scale Mongo DB + Elastic Search cache housing reference data for 30+ Million bonds.}
+        \resumeItem{Led containerization efforts for Distributed System with 70+ Spring data loading processes and web services.}
+        \resumeItem{Automated Ready for Business checks to ensure highest data quality for real time trading users.}
+        \resumeItem{Spearheaded development of new Angular frontend UI for Query Building and displaying Bond Reference data via AG Grid.}
+        \resumeItem{Developed real-time and batch Java Spring data loaders from various source types (CPS/REST/Sybase/KDB/File/NoSQL).}
+        \resumeItem{Designed in house Stored Procedure and Data merging functionality for ease of onboarding new users and tailoring to their needs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Morgan Stanley}{New York, NY}
+      {Technology Analyst Internship -- Institutional Securities Tech -- Backend Developer}{Jun 2020 -- Aug 2020}
+      \resumeItemListStart
+        \resumeItem{Utilized Java and the Spring Framework to monitor application usage statistics}
+        \resumeItem{Leveraged Apache Kafka services to store usage data in Elastic Search indices.}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Morgan Stanley Technology Analyst Program}{New York, NY}
+      {Graduated from Morgan Stanley's rigorous 10 week Backend Developer Training Bootcamp}{Aug 2021 -- Nov 2021}
+    \resumeSubheading
+      {Stevens Institute of Technology}{Hoboken, NJ}
+      {Master of Engineering - Applied Artificial Intelligence}{Aug 2020 -- May 2021}
+    \resumeSubheading
+      {Stevens Institute of Technology}{Hoboken, NJ}
+      {Bachelor of Engineering with High Honor in Computer Engineering, Minor in Computer Science}{Aug 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item \small{\textbf{Languages:} Java, Python, TypeScript, JavaScript, SQL, Scala} \vspace{-4pt}
+    \item \small{\textbf{Frameworks \& Systems:} Spring, Project Reactor Core (Flux), Elastic Search, Mongo DB, Tornado, Angular, Distributed Systems \vspace{-4pt}
+    \item \small{\textbf{Infrastructure \& Tools:} Kafka, CPS/MQ, Docker, Node.js, React, Git, Google Protobuf, Sybase/Postgres/KDB, OpenTelemetry}
+  \resumeSubHeadingListEnd
+
+\end{document}
